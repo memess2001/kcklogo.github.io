@@ -1,9 +1,7 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('.button');
   
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
+    button.addEventListener('click', function() {
+      alert('谢谢查看我的作品！');
     });
   });
